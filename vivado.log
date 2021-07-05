@@ -1,0 +1,155 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jul  5 17:13:15 2021
+# Process ID: 9276
+# Current directory: C:/Users/Hamit/Desktop/dcd_final_proje
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11432 C:\Users\Hamit\Desktop\dcd_final_proje\LAB_8.xpr
+# Log file: C:/Users/Hamit/Desktop/dcd_final_proje/vivado.log
+# Journal file: C:/Users/Hamit/Desktop/dcd_final_proje\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 621.664 ; gain = 29.469
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: memory
+INFO: [Device 21-403] Loading part xc7a100ticsg324-1L
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1175.820 ; gain = 227.414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/memory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'instruction' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'registerFile' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/registerfile.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'registerFile' (1#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/registerfile.sv:3]
+WARNING: [Synth 8-689] width (1) of port connection 'RD1' does not match port width (8) of module 'registerFile' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:41]
+WARNING: [Synth 8-689] width (1) of port connection 'RD2' does not match port width (8) of module 'registerFile' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:41]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/mux2.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (2#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/mux2.sv:3]
+WARNING: [Synth 8-689] width (1) of port connection 'y' does not match port width (8) of module 'mux2' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:3]
+	Parameter ALU_OP_ADD bound to: 3'b000 
+	Parameter ALU_OP_SUB bound to: 3'b010 
+	Parameter ALU_OP_AND bound to: 3'b100 
+	Parameter ALU_OP_OR bound to: 3'b101 
+	Parameter ALU_OP_ADDI bound to: 3'b000 
+	Parameter ALU_OP_LW bound to: 3'b000 
+	Parameter ALU_OP_SW bound to: 3'b000 
+	Parameter ALU_OP_BEQ bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'Nbitfulladder' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/Nbitfulladder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Nbitfulladder' (3#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/Nbitfulladder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/mux4.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (4#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/mux4.sv:3]
+WARNING: [Synth 8-689] width (3) of port connection 's' does not match port width (2) of module 'mux4' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:33]
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:37]
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:37]
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:37]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:37]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/ALU.sv:3]
+WARNING: [Synth 8-689] width (1) of port connection 'result' does not match port width (8) of module 'ALU' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:43]
+INFO: [Synth 8-6157] synthesizing module 'dataMem' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/dataMem.sv:3]
+WARNING: [Synth 8-3848] Net RD in module/entity dataMem does not have driver. [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/dataMem.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'dataMem' (6#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/dataMem.sv:3]
+WARNING: [Synth 8-3848] Net result in module/entity instruction does not have driver. [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'instruction' (7#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/instruction.sv:3]
+WARNING: [Synth 8-689] width (16) of port connection 'result' does not match port width (8) of module 'instruction' [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/memory.sv:19]
+WARNING: [Synth 8-7023] instance 'dut' of module 'instruction' has 14 connections declared, but only 7 given [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/memory.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (8#1) [C:/Users/Hamit/Desktop/dcd_final_proje/LAB_8.srcs/sources_1/new/memory.sv:3]
+WARNING: [Synth 8-3917] design memory has port rd[15] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[14] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[13] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[12] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[11] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[10] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[9] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port rd[8] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[7] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[6] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[5] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[4] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[3] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[2] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[1] driven by constant 0
+WARNING: [Synth 8-3917] design memory has port PC[0] driven by constant 0
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[7]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[6]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[5]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[4]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[3]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[2]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[1]
+WARNING: [Synth 8-3331] design dataMem has unconnected port RD[0]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[7]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[6]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[5]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[4]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[3]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[2]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[1]
+WARNING: [Synth 8-3331] design dataMem has unconnected port A[0]
+WARNING: [Synth 8-3331] design dataMem has unconnected port CLK
+WARNING: [Synth 8-3331] design dataMem has unconnected port WE
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[7]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[6]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[5]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[4]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[3]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[2]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[1]
+WARNING: [Synth 8-3331] design dataMem has unconnected port WD[0]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[7]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[6]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[5]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[4]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[3]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[2]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[1]
+WARNING: [Synth 8-3331] design instruction has unconnected port result[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.023 ; gain = 300.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.023 ; gain = 300.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1249.023 ; gain = 300.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1249.023 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1324.789 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1361.055 ; gain = 412.648
+22 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:25 . Memory (MB): peak = 1361.055 ; gain = 685.672
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  5 17:31:57 2021...
