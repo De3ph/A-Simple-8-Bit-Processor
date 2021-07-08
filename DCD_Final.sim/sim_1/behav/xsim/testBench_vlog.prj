@@ -11,7 +11,7 @@ sv xil_defaultlib  \
 "../../../../DCD_Final.srcs/sources_1/new/extend.sv" \
 "../../../../DCD_Final.srcs/sources_1/new/mux2.sv" \
 "../../../../DCD_Final.srcs/sources_1/new/registerFile.sv" \
-"../../../../DCD_Final.srcs/sim_1/new/testBench.sv" \
+"../../../../DCD_Final.srcs/sim_1/new/Testbench.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

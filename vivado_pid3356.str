@@ -1,0 +1,118 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 3356
+License: Customer
+
+Current time: 	Wed Jul 07 15:25:54 EET 2021
+Time zone: 	Eastern European Time (Asia/Istanbul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 57 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	simge
+User home directory: C:/Users/simge
+User working directory: C:/Users/simge/OneDrive/Masaüstü/DCD_Final
+User country: 	TR
+User language: 	tr
+User locale: 	tr_TR
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.2
+RDI_DATADIR: C:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/simge/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/simge/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/simge/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/simge/OneDrive/Masaüstü/DCD_Final/vivado.log
+Vivado journal file location: 	C:/Users/simge/OneDrive/Masaüstü/DCD_Final/vivado.jou
+Engine tmp dir: 	C:/Users/simge/OneDrive/Masaüstü/DCD_Final/.Xil/Vivado-3356-DESKTOP-GO2PLR6
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	213 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 627 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\simge\OneDrive\Masaüstü\DCD_Final\DCD_Final.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/simge/OneDrive/Masaüstü/DCD_Final/DCD_Final.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Hamit/Desktop/DCD_Final' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+115035kb) [00:00:15]
+// [Engine Memory]: 679 MB (+560499kb) [00:00:15]
+// [GUI Memory]: 118 MB (+49kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4531 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 735 MB. GUI used memory: 55 MB. Current time: 7/7/21, 3:25:59 PM EET
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:06 . Memory (MB): peak = 758.281 ; gain = 62.977 
+// Project name: DCD_Final; location: C:/Users/simge/OneDrive/Masaüstü/DCD_Final; part: xc7k70tfbv676-1
+// [Engine Memory]: 735 MB (+23263kb) [00:00:20]
+dismissDialog("Open Project"); // bB (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Processor (Processor.sv)]", 1); // B (F, cr)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u (O, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u (O, cr)
+// A (cr): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cr)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: Processor 
+// WARNING: HEventQueue.dispatchEvent() is taking  1361 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,072 MB. GUI used memory: 54 MB. Current time: 7/7/21, 3:26:17 PM EET
+// TclEventType: ELABORATE_START

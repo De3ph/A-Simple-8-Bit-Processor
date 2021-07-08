@@ -14,15 +14,16 @@ module Executer(
 	output reg [7:0] result
     );
     
-    wire aluResult, Rd1, Rd2, Rd3, mux1Res;
+    
+    logic [7:0] Rd1,Rd2,Rd3,aluResult,mux1Res;
     reg [7:0] mux2Res;
     wire [7:0] dataMemResult;
-    reg extendImm;
+    logic[7:0] extendImm;
     
     logic MemtoReg, MemWrite, AluSrc, RegWrite, MemWriteRd;
     logic [2:0] ALUControl;
-     
-    extend extend(imm,extendImm);
+    assign mux2Res=8'b00000000; 
+    
     
     always @*
     begin
@@ -36,7 +37,7 @@ module Executer(
         addr <= instr[7:0];
         
     end
-    
+     extend extend(imm,extendImm);    
      ControlUnit ControlUnit(OpCode, funct,Rd,MemtoReg,MemWrite,ALUControl,AluSrc, RegWrite, MemWriteRd);
      
      registerFile registerfile(Ra,Rb,Rd,mux2Res,RegWrite,CLK,Rd1,Rd2,Rd3);

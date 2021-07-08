@@ -19,12 +19,12 @@ module ControlUnit(
         begin
             if(funct == 3'b000)
             begin
-                MemtoReg = 1'b1;
-                MemWrite = 1'b0;
-                ALUControl = 3'b000;
-                AluSrc = 1'b0;
-                RegWrite = 1'b1;
-                MemWriteRd = 1'b0;
+                MemtoReg <= 1'b1;
+                MemWrite <= 1'b0;
+                ALUControl <= 3'b000;
+                AluSrc <= 1'b0;
+                RegWrite <= 1'b1;
+                MemWriteRd <= 1'b0;
             end
             else if(funct == 3'b010)
             begin
