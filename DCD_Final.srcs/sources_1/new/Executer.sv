@@ -14,31 +14,28 @@ module Executer(
 	output reg [7:0] result
     );
     
-    
     logic [7:0] Rd1,Rd2,Rd3,aluResult,mux1Res;
     reg [7:0] mux2Res;
     wire [7:0] dataMemResult;
     logic[7:0] extendImm;
     
-    logic MemtoReg, MemWrite, AluSrc, RegWrite, MemWriteRd;
+    logic MemtoReg, MemWrite, AluSrc, RegWrite;
+    logic [1:0] lw_sw;
     logic [2:0] ALUControl;
     assign mux2Res=8'b00000000; 
     
-    
     always @*
-    begin
-    
+    begin   
         OpCode <= instr[15:12];
         Rd <= instr[11:9];
         Ra <= instr[8:6];
         Rb <= instr[5:3];
         funct <= instr[2:0];
         imm <= instr[5:0];
-        addr <= instr[7:0];
-        
+        addr <= instr[7:0];      
     end
      extend extend(imm,extendImm);    
-     ControlUnit ControlUnit(OpCode, funct,Rd,MemtoReg,MemWrite,ALUControl,AluSrc, RegWrite, MemWriteRd);
+     ControlUnit ControlUnit(OpCode, funct,Rd,MemtoReg,MemWrite,ALUControl,AluSrc, RegWrite, lw_sw);
      
      registerFile registerfile(Ra,Rb,Rd,mux2Res,RegWrite,CLK,Rd1,Rd2,Rd3);
      
@@ -46,10 +43,10 @@ module Executer(
      
      ALU ALU(Rd1,mux1Res,ALUControl,aluResult,C,V,N,Z);
      
-     dataMem dataMem(aluResult,CLK,MemWrite,MemWriteRd,Rd2,Rd3,dataMemResult);
+     dataMem dataMem(aluResult,CLK,MemWrite,lw_sw,Rd2,Rd3,dataMemResult);
      
      mux2 mux2_2(aluResult,dataMemResult,MemtoReg,mux2Res);
-     
+
      assign result = mux2Res;
 
 endmodule

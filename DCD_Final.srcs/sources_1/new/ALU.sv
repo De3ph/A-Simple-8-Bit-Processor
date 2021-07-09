@@ -26,23 +26,11 @@ begin
         
     if(ALUControl==3'b100)begin
         result = a_and_b;end
+        
     if(ALUControl==3'b101)begin
         result <= a_or_b;   end
               
 end
-/*always @(*) 
-begin
-	case(ALUControl)
-			"000" 	: result <= add_and_sub;
-			"010" 	: result <= A - B;
-			"100" 	: result <= A & B;
-			"101"	: result <= A | B;
-			"000"	: result <= add_and_sub;
-			"000"	: result <= add_and_sub;
-			"000"	: result <= add_and_sub;
-			
-	endcase
-end*/
 
 assign C= (~ALUControl[1])&0;
 assign n5=(add_or_sub[7])^A[7];

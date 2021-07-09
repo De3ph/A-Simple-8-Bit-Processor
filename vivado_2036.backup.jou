@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jul  9 16:23:03 2021
+# Process ID: 2036
+# Current directory: C:/Users/Hamit/Desktop/dcd-playground
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent280 C:\Users\Hamit\Desktop\dcd-playground\DCD_Final.xpr
+# Log file: C:/Users/Hamit/Desktop/dcd-playground/vivado.log
+# Journal file: C:/Users/Hamit/Desktop/dcd-playground\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Hamit/Desktop/dcd-playground/DCD_Final.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim
+launch_simulation
+source Testbench.tcl
+close_sim

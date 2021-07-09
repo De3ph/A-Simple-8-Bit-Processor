@@ -1,14 +1,14 @@
 `timescale 1ns / 1ps
 
-module Processor(CLK,instr_result);
+module Processor(CLK,instr_result,PC);
     
     reg[15:0]  instr;
     input logic CLK;
-
+    
     logic C,V,N,Z;
     output reg[7:0] instr_result;
 
-    reg[7:0]PC;
+    output reg[7:0] PC;
     
     reg [2:0] Ra,Rb,Rd,funct;
 	reg [5:0] imm;

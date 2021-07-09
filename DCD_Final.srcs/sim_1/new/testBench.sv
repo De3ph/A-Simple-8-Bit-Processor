@@ -23,12 +23,12 @@
 module Testbench();
 logic clk;
 reg[7:0] result;
+reg[7:0] PC;
 
-
-Processor dut(clk,result);
+Processor dut(clk,result,PC);
 
 initial begin
-// Nedenini bilmiyorum ama saat sinyalini 100 yapýnca 8 tane komut çalýþmýyor, 5 tane çalýþýyor
+// Nedenini bilmiyorum ama saat sinyalini 50 den yukarý yapýnca çalýþmasý gerekenden az çalýþýyor
         clk=0;
         forever #50 clk=~(clk);
     end
